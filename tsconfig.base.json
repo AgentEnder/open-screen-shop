@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@open-screen-shop/breakpoint-utils": [
+        "libs/breakpoint-utils/src/index.ts"
+      ],
+      "@open-screen-shop/catalog/model": ["libs/catalog/model/src/index.ts"],
+      "@open-screen-shop/catalog/state": ["libs/catalog/state/src/index.ts"],
+      "@open-screen-shop/catalog/ui": ["libs/catalog/ui/src/index.ts"],
+      "@open-screen-shop/order-form/model": [
+        "libs/order-form/model/src/index.ts"
+      ],
+      "@open-screen-shop/order-form/state": [
+        "libs/order-form/state/src/index.ts"
+      ],
+      "@open-screen-shop/order-form/ui": ["libs/order-form/ui/src/index.ts"],
+      "@open-screen-shop/vite-plugin-ssr-utils": [
+        "libs/vite-plugin-ssr-utils/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
